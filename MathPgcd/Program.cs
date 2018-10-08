@@ -10,6 +10,8 @@ namespace MathPgcd
       display("Searching for PGCD");
       display($"PGCD(6, 9) is {Pgcd(6, 9)}");
       display($"PGCD(15, 5) is {Pgcd(5, 15)}");
+      // PGCD(1 071 ; 1 029) = 21
+      display($"PGCD(1071, 1029) is {Pgcd(1029, 1071)}");
       display("Press any key to exit:");
       Console.ReadLine();
     }
@@ -28,14 +30,14 @@ namespace MathPgcd
       //  r = a % b;
       //  a = b;
       //  b = r;
-      //}while(r != 0);
-      
+      //} while (r != 0);
+
       while (r != 0)
       {
         r = a % b;
         a = b;
         b = r;
-      }; 
+      };
 
       return b;
     }
